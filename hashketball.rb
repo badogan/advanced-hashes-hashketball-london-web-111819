@@ -197,7 +197,7 @@ end
 def BasriGiveMeTheTotalScores(home_or_away,the_hash)
   total_score = 0
   the_hash[home_or_away][:players].each do |item|
-    total_score = total_score + item[:points]
+    total_score += item[:points]
     end  
   total_score
 end
